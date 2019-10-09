@@ -35,7 +35,7 @@
         <hook src="hooks/patch-android-studio-check.js" type="before_run" />
         <hook src="hooks/patch-android-studio-check.js" type="before_plugin_rm" />
         <preference name="StatusBarStyle" value="lightcontent" />
-        <preference name="StatusBarBackgroundColor" value="#035003" />
+        <preference name="StatusBarBackgroundColor" value="#045a67" />
         <allow-intent href="market:*" />
         <preference name="loadUrlTimeoutValue" value="700000" />
         <preference name="android-build-tool" value="gradle" />
@@ -67,11 +67,9 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
         <preference name="ios-statusbarstyle" value="black-opaque" />
-		
-		<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-			<string>We use your location to show you the most relevant channels in your area</string>
-		</edit-config>		
-		
+        <edit-config file="*-Info.plist" mode="merge" target="NSLocationWhenInUseUsageDescription">
+            <string>We use your location to show you the most relevant channels in your area</string>
+        </edit-config>
         <icon height="1024" src="resources/ios/icon/icon-1024.png" width="1024" />
         <icon height="29" src="resources/ios/icon/icon-small.png" width="29" />
         <icon height="58" src="resources/ios/icon/icon-small@2x.png" width="58" />
@@ -114,10 +112,9 @@
     <plugin name="cordova-plugin-ionic-webview" spec="^2.4.1" />
     <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
     <plugin name="cordova-plugin-statusbar" spec="2.4.2" />
-	
     <plugin name="cordova-plugin-nativegeocoder" spec="3.1.2">
-		<variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="We use your location to show you the best channels to subscribe to" />
-	</plugin>
+        <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="We use your location to show you the best channels to subscribe to" />
+    </plugin>
     <plugin name="cordova-plugin-geolocation" spec="4.0.1">
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="We use your location to show you the best channels to subscribe to" />
     </plugin>
