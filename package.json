@@ -39,7 +39,7 @@
     "cordova-plugin-doze-Optimize": "git+https://github.com/thomas550i/cordova-plugin-doze-Optimize.git",
     "cordova-plugin-fastrde-mqtt": "git+https://github.com/sanctus671/cordova-plugin-fastrde-mqtt.git#master",
     "cordova-plugin-geolocation": "4.0.1",
-    "cordova-plugin-inappbrowser": "3.0.0",
+    "cordova-plugin-inappbrowser": "3.1.0",
     "cordova-plugin-ionic-keyboard": "2.0.5",
     "cordova-plugin-ionic-webview": "1.2.1",
     "cordova-plugin-local-notification": "git+https://github.com/sanctus671/cordova-plugin-local-notifications.git",
